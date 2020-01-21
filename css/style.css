@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  flex-direction: row;
+}
+.banner {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
+  background-size: cover, 150px, cover;
+  background-position: center, center 100px, center;
+  background-repeat: no-repeat;
+}
+
+.container-small {
+  flex-direction: center;
+  vertical-align: baseline;
+}
+
+.cart {
+  height: 8vh;
+  display: flex;
+  justify-content: flex-end;
+  align-self: auto;
+}
+.nav {
+  height: 10vh;
+  display: flexbox;
+  text-align: center;
+}
+.color {
+  color: #e2574c;
+}
+.font {
+  font-style: ;
+}
