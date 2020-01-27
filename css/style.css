@@ -1,38 +1,307 @@
-.header {
+/* Natural box layout model to all elements*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*
+/* Basic Typography for entire page(s) 
+--------------------------------------- */
+
+html,
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #2d2d2d;
+}
+p{
+  text-align: center;
+}
+/* Global styles for all  */
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+h1{
+  font-size: 2.5rem;
+
+}
+
+h2{
+  font-size: 2rem;
+  font-style: italic;
+  
+
+
+}
+h2 span{
+  
+  font-style: normal;
+  font-weight: bold;
+  
+
+}
+
+h3{
+  font-size: 1.5rem;
+
+}
+.container {
+ max-width: 1080px;
+ margin: 0 auto;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+  
+}
+a:hover {
+  color: rgb(199, 77, 61);
+}
+  
+
+/* Header styles  ;
+--------------------------------------- */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    
+    
+    }
+    .header-logo {
+      order: 1;
+      
+      height: 50px;
+      
+      
+    }
+    .header-logo img{
+      max-width: 150px;
+    }
+    .nav {
+      order: 2;
+      width: 3px;
+     }
+     .nav-list {
+       display: flex;
+       justify-content: center;
+       flex-direction: row;
+       font-size: 0.9rem;
+       
+      }
+      .nav-list a {
+        display:block;
+        padding: 0.5rem;
+        color:  #e2574c;
+        text-decoration: none;
+        font-weight: bolder;
+      }
+    .cart {
+      order: 3;
+      display: flex;
+      flex-direction: row-reverse;
+      height: 50px;
+      
+    }
+       
+     /* 1 Banner styles 
+--------------------------------------- */
+     .banner {
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
+      background-size: cover, 150px, cover;
+      background-position: center, center 100px, center;
+      background-repeat: no-repeat;
+    }
+    .text-banner {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .new-collection {
+     font-family: 'Raleway', sans-serif;
+     font-size: 1.5rem;
+     font-weight: bolder;
+    }
+    .summer-2020 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-style: normal;
+
+    }
+
+    
+    /* Hand-Crafted Styles section 
+--------------------------------------- */
+
+.small-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  }
+
+/* Item selection  section
+--------------------------------------- */
+.item-selection {
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  padding: 0 1rem;
+}
+.section-item-selection {
+  position: absolute;
   display: flex;
   flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  height: 70%;
+  
 }
-.banner {
-  height: 50vh;
+.item-selection h2 {
+  font-family: "Raleway";
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 0.1em solid white;
+  font-size: 0.7em;
+  text-shadow: 1px 1px 1px lightslategrey;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.category-text {
+  position: absolute;
+  padding-bottom: 10%;
+}
+.item-selection h2:nth-child(1) {
+  width: 50%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/mens-category.jpg");
+}
+.item-selection h2:nth-child(2) {
+  width: 25%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/trends-category.jpg");
+}
+.item-selection h2:nth-child(3) {
+  width: 25%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/glasses-category.jpg");
+}
+.item-selection h2:nth-child(4) {
+  width: 25%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/sale-category.jpg");
+}
+.item-selection h2:nth-child(5) {
+  width: 25%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/bags-category.jpg");
+}
+.item-selection h2:nth-child(6) {
+  width: 50%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/womens-category.jpg");
+  
+}
+
+
+
+
+/* Most - loved products section
+--------------------------------------- */
+
+.slider {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Sign - up for update section
+--------------------------------------- */
+
+.subscribtion {
+  height: 38vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
-  background-size: cover, 150px, cover;
-  background-position: center, center 100px, center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/wave-bkgd.jpg");
+  background-size: cover, cover, cover;
+  background-position:bottom, bottom, bottom;
   background-repeat: no-repeat;
+  
 }
 
-.container-small {
-  flex-direction: center;
-  vertical-align: baseline;
+.sign {
+  max-width: 700px;
+  margin: 0 auto;
+  color: white;
 }
 
-.cart {
-  height: 8vh;
+/* Footer section
+--------------------------------------- */
+.footer {
+  height: 30vh;
+  align-content: center;
+  padding: 0 2%;
+  text-align: left;
+  font-family: 'Playfair Display Web',serif;
+  color: #ffffff;
+  background-color: #242423;
+  line-height: 1.5;
+}
+.info-section {
   display: flex;
-  justify-content: flex-end;
-  align-self: auto;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  padding: 4rem 0;
+
 }
-.nav {
-  height: 10vh;
-  display: flexbox;
-  text-align: center;
+
+.copyrights {
+  display: flex;
+  margin-bottom: 1rem;
 }
-.color {
-  color: #e2574c;
+.contact-us {
+  display: flex;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+
 }
-.font {
-  font-style: ;
+.address {
+  display: flex;
+  color: #969696;
 }
+.social-media-list {
+  display: flex;
+  padding-bottom: 3rem;
+  flex-direction: column;
+  text-decoration: none
+
+
+}
+.link {
+  text-decoration: underline;
+  }
