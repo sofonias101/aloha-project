@@ -7,6 +7,26 @@ html {
 *:after {
   box-sizing: inherit;
 }
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  color: #e2574c;
+}
+.screen-reader-text:focus {
+  clip: auto !important;
+  display: block;
+  height: auto;
+  left: 5px;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* above all content */
+}
+#main[tabindex="-1"]:focus {
+  outline: 0;
+}
 
 /*
 /* Basic Typography for entire page(s) 
@@ -20,6 +40,8 @@ body {
   color: #2d2d2d;
 }
 p{
+  margin-top: 1rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 /* Global styles for all  */
@@ -37,7 +59,7 @@ h1{
 }
 
 h2{
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-style: italic;
   
 
@@ -119,23 +141,28 @@ a:hover {
      /* 1 Banner styles 
 --------------------------------------- */
      .banner {
-      height: 40vh;
+      background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url(../../images/banner-girl.png) no-repeat center 60px,url(../../images/flower-bkgd.jpg) repeat-x top;
+      background-size: cover,150px 369px,cover;
+      height: 400px;
+      position: relative;
+      /* height: 400px;
       display: flex;
       justify-content: center;
       align-items: center;
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
-      background-size: cover, 150px, cover;
+      url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
+      background-size: cover,150px 369px,cover;
       background-position: center, center 100px, center;
-      background-repeat: no-repeat;
+      background-repeat: no-repeat; */
     }
     .text-banner {
-      color: white;
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      text-align: center;
-      margin-top: 50px;
+    color: white;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
     }
     .new-collection {
      font-family: 'Raleway', sans-serif;
@@ -276,7 +303,7 @@ a:hover {
   justify-content: space-between;
   margin: 0 auto;
   width: 100%;
-  padding: 4rem 0;
+  padding-top: 2.5rem;
 
 }
 
@@ -305,3 +332,12 @@ a:hover {
 .link {
   text-decoration: underline;
   }
+
+/*Media Query For tablet*/
+  @media (max-width:600px ) {
+    /* body { 
+    } */
+  }
+
+ /*Media Query For mobile*/
+  
