@@ -334,10 +334,35 @@ a:hover {
   }
 
 /*Media Query For tablet*/
-  @media (max-width:600px ) {
+@media only screen and (min-width: 600px){
     /* body { 
     } */
+    
   }
 
  /*Media Query For mobile*/
+ @media (max-width:500px) {
+   body {
+     width: 100%;
+   }
+   .item-selection h2:nth-child(1) {
+     width: 100%;
+   }
+   .item-selection h2:nth-child(2) {
+     width: 50%;
+    }
+   .item-selection h2:nth-child(3) {
+     width: 50%;
+    }
+   .item-selection h2:nth-child(4) {
+     width: 50%;
+    }
+   .item-selection h2:nth-child(5) {
+     width: 50%;
+    }
+   .item-selection h2:nth-child(6) {
+    width: 100%;
+  }
+ }
+
   
