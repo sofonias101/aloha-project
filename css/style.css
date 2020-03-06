@@ -363,6 +363,28 @@ a:hover {
    .item-selection h2:nth-child(6) {
     width: 100%;
   }
+
+  .footer {
+    height: 100%;    
+    padding: 4rem 0;
+
+  }
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .social-media-list{
+    flex-direction: row;
+    
+  }
+  i{
+    min-width: 25px;
+  }
+  .social-text { 
+    display: none;
+  }
  }
 
   
