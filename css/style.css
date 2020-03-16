@@ -98,7 +98,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 80px;
+    min-height: 110px;
     
     
     }
@@ -145,15 +145,6 @@ a:hover {
       background-size: cover,150px 369px,cover;
       height: 400px;
       position: relative;
-      /* height: 400px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
-      background-size: cover,150px 369px,cover;
-      background-position: center, center 100px, center;
-      background-repeat: no-repeat; */
     }
     .text-banner {
     color: white;
@@ -263,12 +254,34 @@ a:hover {
   justify-content: center;
 }
 
+/* Product Cards Section
+--------------------------------------- */
+
+
+.product-cards {
+	padding-bottom: 5rem;
+}
+
+.product-cards h4,
+.product-cards p {
+	color: #969696;
+	width: 100%;
+}
+
+.add-product {
+	width: 50%;
+	position: relative;
+	background-color: #242424;
+}
+
+.carousel-cell {
+	width: 100%;
+}
 
 /* Sign - up for update section
 --------------------------------------- */
 
 .subscribtion {
-  height: 38vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,7 +290,7 @@ a:hover {
   background-size: cover, cover, cover;
   background-position:bottom, bottom, bottom;
   background-repeat: no-repeat;
-  
+  padding-bottom: 10px;
 }
 
 .sign {
@@ -289,7 +302,7 @@ a:hover {
 /* Footer section
 --------------------------------------- */
 .footer {
-  height: 30vh;
+  height: 100%;
   align-content: center;
   padding: 0 2%;
   text-align: left;
@@ -335,16 +348,44 @@ a:hover {
 
 /*Media Query For tablet*/
 @media only screen and (min-width: 600px){
-    /* body { 
-    } */
     
-  }
+}
+  
+  /*Media Query For mobile*/
+  @media (max-width:500px) {
+    body {
+    }
+    .site-header {
+      
+      
+      }
+      .header-logo {
 
- /*Media Query For mobile*/
- @media (max-width:500px) {
-   body {
-     width: 100%;
-   }
+      }
+      .header-logo img{
+        max-width: 150px;
+      }
+      .nav {
+       }
+       .nav-list {
+         
+        }
+        .nav-list a {
+          display:block;
+          padding: 0.5rem;
+          color:  #e2574c;
+          text-decoration: none;
+          font-weight: bolder;
+        }
+      .cart {
+        order: 3;
+        display: flex;
+        flex-direction: row-reverse;
+        height: 50px;
+        
+      }
+         
+
    .item-selection h2:nth-child(1) {
      width: 100%;
    }
@@ -384,7 +425,8 @@ a:hover {
   }
   .social-text { 
     display: none;
-  }
  }
+}
+
 
   
