@@ -98,7 +98,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 110px;
+    min-height: 96px;
     
     
     }
@@ -110,7 +110,7 @@ a:hover {
       
     }
     .header-logo img{
-      max-width: 150px;
+      max-width: 160px;
     }
     .nav {
       order: 2;
@@ -119,9 +119,8 @@ a:hover {
      .nav-list {
        display: flex;
        justify-content: center;
-       flex-direction: row;
-       font-size: 0.9rem;
-       
+       flex-direction: row;       
+
       }
       .nav-list a {
         display:block;
@@ -129,6 +128,8 @@ a:hover {
         color:  #e2574c;
         text-decoration: none;
         font-weight: bolder;
+        padding-right: 40px;
+        font-size: 18px;
       }
     .cart {
       order: 3;
@@ -137,13 +138,16 @@ a:hover {
       height: 50px;
       
     }
+    .cart-img {
+      height: 58px;
+    }
        
      /* 1 Banner styles 
 --------------------------------------- */
      .banner {
       background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url(../../images/banner-girl.png) no-repeat center 60px,url(../../images/flower-bkgd.jpg) repeat-x top;
-      background-size: cover,150px 369px,cover;
-      height: 400px;
+      background-size: cover,268px 600px,cover;
+      height: 550px;
       position: relative;
     }
     .text-banner {
@@ -157,12 +161,14 @@ a:hover {
     }
     .new-collection {
      font-family: 'Raleway', sans-serif;
-     font-size: 1.5rem;
+     font-size: 1.3rem;
      font-weight: bolder;
+     margin-bottom: -5px;
+
     }
     .summer-2020 {
       font-family: 'Playfair Display', serif;
-      font-size: 3rem;
+      font-size: 4rem;
       font-style: normal;
 
     }
@@ -174,8 +180,8 @@ a:hover {
 .small-container {
   max-width: 700px;
   margin: 0 auto;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 4%;
+  padding-bottom: 4%;
   }
 
 /* Item selection  section
@@ -188,7 +194,6 @@ a:hover {
   text-transform: uppercase;
   color: white;
   position: relative;
-  padding: 0 1rem;
 }
 .section-item-selection {
   position: absolute;
@@ -196,7 +201,7 @@ a:hover {
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
-  height: 70%;
+  height: 49rem;
   
 }
 .item-selection h2 {
@@ -338,7 +343,7 @@ a:hover {
   display: flex;
   padding-bottom: 3rem;
   flex-direction: column;
-  text-decoration: none
+  text-decoration: none;
 
 
 }
