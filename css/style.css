@@ -104,10 +104,7 @@ a:hover {
     }
     .header-logo {
       order: 1;
-      
-      height: 50px;
-      
-      
+      height: 50px
     }
     .header-logo img{
       max-width: 160px;
@@ -264,7 +261,7 @@ a:hover {
 
 
 .product-cards {
-	padding-bottom: 5rem;
+	padding-top: 5rem;
 }
 
 .product-cards h4,
